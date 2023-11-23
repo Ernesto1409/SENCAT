@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- SweetAlert -->
+      <script src="js/sweetalert2@11.js"></script>
+
+
+      <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>SENCAT</title>
+  </head>
+  <body>
+
+    <div class="px-2">
+      <!-- First part to answer the test -->
+        <form action="a.html" method="post" id="miFormulario">
+            <section id="fisrtPart">
+                <div class="container-fluid">
+                    <div class="card px-5 py-2 mt-1">
+
+                        <div class="row  border-bottom mb-2 ">
+                            <div class="col-2 d-flex justify-content-center"><img src="UTEZ.svg" alt="Logo UTEZ" width="50%"></div>
+                            <div class="col-8">
+
+                                <h1 class="fs-2 mt-1 text-center m-0 border-bottom border-success "><b class="text-success ">SENCAT</b></h1>
+                                <p class="m-0 text-center fs-5 fst-italic ">Sistema de Encuestas de Calidad de Software en Tienditas</p>
+
+                            </div>
+                            <div class="col-2 d-flex justify-content-center"><img src="DATID.svg" alt="Logo DATID" width="80%"></div>
+
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row mb-1 " style="margin-top: 5px;">
+                                    <label class="fs-6 text-success fw-bold col-4">Encuesta:</label>
+                                    <div class="col-7">
+                                        <select class="form-select   form-select-sm" id="nameTest" required>
+                                            <option >Encuesta Septiembre-Diciembre</option>
+                                            <option >Ejemplo 1</option>
+                                            <option >Ejemplo 2</option>
+                                            <option >Ejemplo 3</option>
+                                            <option >Ejemplo 4</option>
+                                            <option >Ejemplo 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-1 " style="margin-top: 5px;">
+                                    <label class="fs-6 text-success fw-bold col-4">Tiendita:</label>
+                                    <div class="col-7">
+                                        <select class="form-select   form-select-sm" id="nameTest" required>
+                                            <option >Abarrotes don pancho</option>
+                                            <option >Super Tiendas Cano</option>
+                                            <option >Tienda nose</option>
+                                            <option >Cemetos Moctezuma</option>
+                                            <option >Tienda La Guadalupana</option>
+                                            <option >Tienda Temach</option>>
+                                        </select>
+                                    </div>
+                            </div>
+
+                             </div>
+
+                                <div class="col-3">
+                                    <h3 class="display mb-1">Promedio:</h3>
+                                    <p id="promedio" class="display-6 fw-bold text-success text-center mb-0">0%</p>
+                                </div>
+                            </div>
+                            
+                        </div> 
+
+
+                        <div class="container-fluid  px-5 general" >
+                            <div class="row">
+                                
+                                <div class="col-12 mb-2">
+                                    <div class="row" style="background-color: black ; border-radius: 3px;">
+                                        <div class="col-2"></div>
+                                        <div class="col-2 fw-bold text-center" style="color: red;">Mala</div>
+                                        <div class="col-2 fw-bold text-center" style="color:chocolate">Regular</div>
+                                        <div class="col-2 fw-bold text-center" style="color:gold">Bueno</div>
+                                        <div class="col-2 fw-bold text-center" style="color:lawngreen">Muy buena</div>
+                                        <div class="col-2 fw-bold text-center" style="color:royalblue">Excelente</div>
+                                    </div>
+                                </div>
+    
+                                        
+                                <div class="test">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <div class="col-2 fw-bold pt-2"  style="border: 1px solid;"><img src="img/funcionalidad.png" width="40px" height="40px">Funcionalidad</div>
+                                            <div class="col-2 text-center"  style="border: 1px solid;padding: 5px"> <a  href="#bad"><img  class="funcional bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#regular"><img class="funcional regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#fine"><img class="funcional fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#veryFine"><img  class="funcional veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#exelent"><img class="funcional exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 fw-bold pt-2"  style="border: 1px solid;"><img src="img/confiable.png" width="40px" height="40px">Confiabilidad</div>
+                                            <div class="col-2 text-center"  style="border: 1px solid;padding: 5px"><a  href="#bad"><img  class="confiabilidad bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#regular"><img class="confiabilidad regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#fine"><img class="confiabilidad fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#veryFine"><img  class="confiabilidad veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#exelent"><img class="confiabilidad exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div> 
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 fw-bold pt-2" style="border: 1px solid;"><img src="img/usabilidad.png" width="40px" height="40px">  Usabilidad</div>
+                                            <div class="col-2 text-center" style="border: 1px solid;padding: 5px"><a  href="#bad"><img  class="usabilidad bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#regular"><img class="usabilidad regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#fine"><img class="usabilidad fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#veryFine"><img  class="usabilidad veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#exelent"><img class="usabilidad exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 fw-bold pt-2" style="border: 1px solid;"><img src="img/mantenimiento.png" width="40px" height="40px">Rendimiento</div>
+                                            <div class="col-2 text-center" style="border: 1px solid;padding: 5px"><a  href="#bad"><img  class="rendimiento bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#regular"><img class="rendimiento regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#fine"><img class="rendimiento fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#veryFine"><img  class="rendimiento veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#exelent"><img class="rendimiento exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 fw-bold pt-2"  style="border: 1px solid;"><img src="img/rendimiento.png" width="40px" height="40px">Mantenimiento</div>
+                                            <div class="col-2 text-center"  style="border: 1px solid;padding: 5px"><a  href="#bad"><img  class="mantenimiento bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#regular"><img class="mantenimiento regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#fine"><img class="mantenimiento fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#veryFine"><img  class="mantenimiento veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#exelent"><img class="mantenimiento exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 fw-bold pt-2"  style="border: 1px solid;"><img src="img/portabilidad-de-datos.png" width="40px" height="40px">Portabilidad</div>
+                                            <div class="col-2 text-center"  style="border: 1px solid;padding: 5px"><a  href="#bad"><img  class="portabilidad bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#regular"><img class="portabilidad regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#fine"><img class="portabilidad fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#veryFine"><img  class="portabilidad veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#exelent"><img class="portabilidad exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 fw-bold pt-2"  style="border: 1px solid;"><img src="img/proteger.png" width="40px" height="40px">Seguridad</div>
+                                            <div class="col-2 text-center"  style="border: 1px solid; padding: 5px"><a  href="#bad"><img  class="seguridad bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#regular"><img class="seguridad regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#fine"><img class="seguridad fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid;padding: 5px"><a  href="#veryFine"><img  class="seguridad veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center " style="border: 1px solid;padding: 5px"><a  href="#exelent"><img class="seguridad exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 fw-bold pt-2"  style="border: 1px solid;"><img src="img/compatibilidad.png"width="40px" height="40px">Compatibilidad</div>
+                                            <div class="col-2 text-center"  style="border: 1px solid; padding: 5px;"><a  href="#bad"><img  class="compatibilidad bad" src = "emojis/badBlack.svg" alt="MaloEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid; padding: 5px"><a  href="#regular"><img class="compatibilidad regular" src = "emojis/regularBlack.svg" alt="RegularEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid; padding: 5px"><a  href="#fine"><img class="compatibilidad fine" src = "emojis/buenoBlack.svg" alt="BuenoEmoji" width="50px" height="50px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid; padding: 5px"><a  href="#veryFine"><img  class="compatibilidad veryFine" src = "emojis/muyBuenoBlack.svg" alt="MuyBuenoEmoji" width="40px" height="40px" /></a></div>
+                                            <div class="col-2 text-center "  style="border: 1px solid; padding: 5px"><a  href="#exelent"><img class="compatibilidad exelent" src = "emojis/exelenteBlack.svg" alt="ExcelenteEmoji" width="40px" height="40px" /></a></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                       
+                        <div class="row  border-bottom mb-2 " style="padding-top: 15px;">
+                            <div class="d-flex justify-content-between pt-2 col-12">
+                                <button class="btn btn-outline-info " data-bs-toggle="modal" href="#exampleModalToggle" role="button" style="border: 2px solid black;">Resumen</button>
+                                <button class="btn btn-outline-secondary" style="border: 2px solid black;">Archivos</button>
+                                <!-- <input type="button" value="Limpiar" class="btn btn-outline-warning" style="border: 2px solid black;" onclick="limpiarFormulario('miFormulario')"> -->
+                                <!-- <input type="button" value="Limpiar" class="btn btn-outline-warning " style="border: 2px solid black;" onclick="limpiarFormulario('miFormulario')"> -->
+                                <!-- <button id="limpiarButton" class="btn btn-outline-warning " style="border: 2px solid black;">Limpiar</button> -->
+                                <button id="delet"  name="delet"   type="button" class="btn btn-outline-warning " style="border: 2px solid black;">Limpiar</button>
+                                <button class="btn btn-outline-success " id="save" style="border: 2px solid black;">Guardar</button>
+                                <button class="btn btn-outline-danger " style="border: 2px solid black;">Cancelar</button>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12"  style="padding-top: 25px;">
+                            <div class="d-flex justify-content-between pt-2 col-12">
+                                <button class="btn btn-outline-info px-5" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Resumen</button>
+                                <button class="btn btn-outline-secondary">Archivos</button>
+                                <button class="btn btn-outline-warning px-5">Eliminar</button>
+                                <button class="btn btn-outline-success px-5" id="save">Guardar</button>
+                                <button class="btn btn-outline-danger px-5">Cancelar</button>
+                            </div>
+                        </div> -->
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+            </section>
+        </form>
+
+
+
+<!-----------------------------------------MODAL------------------------------------------------------------------>
+   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">SENCAT</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <div class="alert alert-success" role="alert">
+                    <h3 class="text-center">   Encuesta septiembre </h3>
+                </div>
+
+               <div class="container">
+                   <div class="fs-3 my-5">
+                       <b >Encuestas realizadas: </b> 0
+                   </div>
+
+                   <div class="fs-3">
+                       <b>Promedio general: </b> 0%
+                   </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="js/function.js"> </script>
+  </body>
+</html>
